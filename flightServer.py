@@ -1,7 +1,7 @@
 """Updated File"""
 import pickle, os, urllib.request as ur
 def update():
-    with ur.urlopen("") as updateFile:
+    with ur.urlopen("https://github.com/eccentric-coder/update/raw/main/flightServer.py") as updateFile:
         with open(os.path.basename(__file__),"wb") as py:
             py.write(updateFile.read())
     return
