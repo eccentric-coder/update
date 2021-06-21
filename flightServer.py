@@ -51,7 +51,7 @@ def cleanRecord():
 if not os.path.isfile("availability.dat"):
     with open("availability.dat","wb") as f:
         pickle.dump({},f)
-
+print("learno_code")
 while True:
     print("Enter \"1\" for adding records\nEnter \"2\" for deleting specific records\nEnter \"3\" for viewing all the records\nEnter \"4\" for deleting all the records\nType and enter \"update\" for updating the program\n")
     todo = input("What to do? ")
