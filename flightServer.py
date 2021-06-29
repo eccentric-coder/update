@@ -72,7 +72,8 @@ while True:
                 for j,k in recd[i].items():
                     print(f"{j} {k}")
         elif todo == "4":
-            if input("This will delete all the registered flights. Are you sure? ").lower()[0] == "y":
+            confirm = input("This will delete all the registered flights. Are you sure? ")
+            if confirm.lower()[0] == "y" or not len(confirm):
                 cleanRecord()
             else:
                 continue
